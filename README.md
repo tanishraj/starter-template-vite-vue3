@@ -1,4 +1,4 @@
-# Vite Vue Starter Temaplte
+# Vite Vue Starter Template
 
 This project is a simple Vue.js application scaffolded with Vite. Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite + Vue 3.0 + SCSS + Vue Router 4.0
 
@@ -28,7 +28,7 @@ To get started with the project, follow these steps:
     cd vite_vue
     ```
 
-2. **Install dependencies**: After navigating to the project directory, install the necessary dependencies using npm.
+2. **Install dependencies**: After navigating to the project directory, install the necessary dependencies using yarn.
 
     ```bash
     yarn install
@@ -36,7 +36,7 @@ To get started with the project, follow these steps:
 
 ## Scripts
 
-This project comes with several npm scripts to help with development, building, and previewing the application.
+This project comes with several scripts to help with development, building, and previewing the application.
 
 -   **dev**: Starts the development server with hot module replacement.
 
@@ -56,6 +56,36 @@ This project comes with several npm scripts to help with development, building, 
     yarn run preview
     ```
 
+-   **lint**: Runs ESLint to check for code style issues.
+
+    ```bash
+    yarn run lint
+    ```
+
+-   **lint:fix**: Runs ESLint to fix code style issues and then runs Stylelint to fix CSS/SCSS issues.
+
+    ```bash
+    yarn run lint:fix
+    ```
+
+-   **format**: Runs Prettier to format all files.
+
+    ```bash
+    yarn run format
+    ```
+
+-   **stylelint**: Runs Stylelint to check for CSS/SCSS style issues.
+
+    ```bash
+    yarn run stylelint
+    ```
+
+-   **stylelint:fix**: Runs Stylelint to fix CSS/SCSS style issues.
+
+    ```bash
+    yarn run stylelint:fix
+    ```
+
 ## Dependencies
 
 The project relies on the following main dependencies:
@@ -67,8 +97,17 @@ The project relies on the following main dependencies:
 
 For development purposes, the project includes several dev dependencies:
 
+-   **@eslint/js**: ESLint's JavaScript runtime. Version ^9.11.0 is used.
 -   **@vitejs/plugin-vue**: This plugin enables Vue support in Vite. Version ^5.0.5 is used.
+-   **eslint**: ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. Version ^9.11.0 is used.
+-   **eslint-config-prettier**: Turns off all rules that are unnecessary or might conflict with Prettier. Version ^9.1.0 is used.
+-   **eslint-plugin-prettier**: Runs Prettier as an ESLint rule. Version ^5.2.1 is used.
+-   **eslint-plugin-vue**: Official ESLint plugin for Vue.js. Version ^9.28.0 is used.
+-   **prettier**: An opinionated code formatter. Version ^3.3.3 is used.
 -   **sass**: Sass is a preprocessor scripting language that is interpreted or compiled into CSS. Version ^1.77.6 is used.
+-   **stylelint**: A mighty, modern linter that helps you avoid errors and enforce conventions in your styles. Version ^16.9.0 is used.
+-   **stylelint-prettier**: Runs Prettier as a Stylelint rule. Version ^5.0.2 is used.
+-   **stylelint-scss**: A collection of SCSS specific linting rules for Stylelint. Version ^6.7.0 is used.
 -   **vite**: Vite is a next-generation frontend tooling that provides a fast development environment. Version ^5.3.1 is used.
 
 ## Usage
@@ -81,7 +120,7 @@ To work with this project, you can use the following commands:
     yarn run dev
     ```
 
-    This will start the Vite development server, and you can view your application in the browser at `http://localhost:3000`. Any changes you make to the code will be hot-reloaded automatically.
+    This will start the Vite development server, and you can view your application in the browser at `http://localhost:5173`. Any changes you make to the code will be hot-reloaded automatically.
 
 2. **Build**: To create a production build of the application, run:
 
@@ -98,6 +137,16 @@ To work with this project, you can use the following commands:
     ```
 
     This command will start a local server to serve the files from the `dist` directory. You can view the production build in the browser at `http://localhost:5173`.
+
+4. **Linting and Formatting**: To ensure code quality and consistency, you can use the following commands:
+
+    ```bash
+    yarn run lint        # Check for code style issues
+    yarn run lint:fix    # Fix code style issues
+    yarn run format      # Format all files
+    yarn run stylelint   # Check for CSS/SCSS style issues
+    yarn run stylelint:fix # Fix CSS/SCSS style issues
+    ```
 
 ## Contributing
 
