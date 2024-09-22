@@ -24,7 +24,7 @@ To get started with the project, follow these steps:
 1. **Clone the repository**: First, you need to clone the repository to your local machine using Git.
 
     ```bash
-    git clone https://github.com/tanishraj/starter-template.git
+    git clone https://github.com/tanishraj/starter-template-vite-vue3.git
     cd vite_vue
     ```
 
